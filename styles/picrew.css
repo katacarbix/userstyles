@@ -1,0 +1,61 @@
+/* make the picrew image maker fill the entire screen */
+
+@-moz-document regexp("https://picrew.me/image_maker/.*") {
+	.imagemaker_ad_wrapper {
+		display: none;
+	}
+
+	.view_pc .imagemaker_container_wrapper,
+	.view_pc .randommaker_container_wrapper {
+		width: 100%;
+	}
+
+	.view_pc .imagemaker_container,
+	.view_pc .randommaker_container {
+		height: 100%;
+	}
+
+	@media screen and (min-width: 800px) {
+		.view_pc .imagemaker_container {
+			flex-direction: row;
+		}
+
+		.view_pc .imagemaker_canvas_wrapper {
+			height: 100%;
+			max-height: unset;
+			width: 100%;
+			max-width: 50vw;
+		}
+
+		.view_pc .imagemaker_info_wrapper {
+			width: 600px;
+			height: 800px;
+			max-height: 90vh;
+			top: 50%;
+			left: 50%;
+			transform: translatex(-50%) translatey(-50%);
+		}
+	}
+
+	.imagemaker_menu_btn {
+		width: 120px;
+	}
+
+	.imagemaker_parts_menu_wrapper {
+		padding-left: 120px;
+	}
+
+	.imagemaker_parts_menu ul li {
+		width: 56px;
+	}
+
+	.imagemaker_itemlist ul li {
+		width: 24%;
+		max-width: 160px;
+	}
+
+	.imagemaker_info_show_btn {
+		top: auto;
+		bottom: 4px;
+	}
+}
