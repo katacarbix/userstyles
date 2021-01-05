@@ -2,32 +2,32 @@
 
 @-moz-document regexp("https://picrew.me/image_maker/.*") {
 	.imagemaker_ad_wrapper {
-		display: none;
+		display: none !important;
 	}
 
-	.view_pc .imagemaker_container_wrapper,
-	.view_pc .randommaker_container_wrapper {
-		width: 100%;
+	.imagemaker_container_wrapper,
+	.randommaker_container_wrapper {
+		width: 100% !important;
 	}
 
-	.view_pc .imagemaker_container,
-	.view_pc .randommaker_container {
-		height: 100%;
+	.imagemaker_container,
+	.randommaker_container {
+		height: 100% !important;
 	}
 
 	@media screen and (min-width: 800px) {
-		.view_pc .imagemaker_container {
+		.imagemaker_container {
 			flex-direction: row;
 		}
 
-		.view_pc .imagemaker_canvas_wrapper {
-			height: 100%;
+		.imagemaker_canvas_wrapper {
+			height: 100% !important;
 			max-height: unset;
 			width: 100%;
 			max-width: 50vw;
 		}
 
-		.view_pc .imagemaker_info_wrapper {
+		.imagemaker_info_wrapper {
 			width: 600px;
 			height: 800px;
 			max-height: 90vh;
