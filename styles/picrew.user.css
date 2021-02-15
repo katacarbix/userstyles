@@ -1,7 +1,19 @@
-/* make the picrew image maker fill the entire screen */
+/* ==UserStyle==
+@name           Picrew Image Maker Widescreen
+@namespace      github.com/katacarbix/userstyles
+@version        1.0.0
+@description    Makes the picrew image maker fill the entire page.
+@author         katacarbix
+@license		CC0-1.0
 
-@-moz-document regexp("https://picrew.me/image_maker/.*") {
-	.imagemaker_ad_wrapper {
+@preprocessor   less
+
+@var   range    breakpoint  "Widescreen minimum width"  [800, 0, 2000, 1, "px"]
+@var   range    item-size   "Item button size"          [160, 50, 300, 1, "px"]
+==/UserStyle== */
+
+@-moz-document url-prefix("https://picrew.me/image_maker/"){
+    .imagemaker_ad_wrapper {
 		display: none !important;
 	}
 
@@ -15,7 +27,7 @@
 		height: 100% !important;
 	}
 
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: @breakpoint){
 		.imagemaker_container {
 			flex-direction: row;
 		}
@@ -38,20 +50,18 @@
 	}
 
 	.imagemaker_menu_btn {
-		width: 120px;
+		width: 100px;
 	}
-
 	.imagemaker_parts_menu_wrapper {
-		padding-left: 120px;
+		padding-left: 100px;
 	}
 
 	.imagemaker_parts_menu ul li {
-		width: 56px;
+		width: 48px;
 	}
 
 	.imagemaker_itemlist ul li {
-		width: 24%;
-		max-width: 160px;
+		max-width: @item-size;
 	}
 
 	.imagemaker_info_show_btn {
