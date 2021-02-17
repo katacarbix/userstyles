@@ -1,14 +1,16 @@
 /* ==UserStyle==
 @name           Twitter: Hide trends and follow suggestions
 @namespace      github.com/katacarbix/userstyles
-@version        1.0.0
-@description    Hides the "What's Happening" (trending) and "Who to Follow" boxes on the right side of the Home timeline on Twitter to minimize distractions.
+@version        1.0.1
+@description    Hides the "What's Happening" (trending) and "Who to Follow" boxes on the right side of the Home timeline on Twitter.
 @author         katacarbix
 ==/UserStyle== */
-
 @-moz-document domain("twitter.com") {
-	/* the aria-label selectors are there in case the first selector fails */
-	.r-k0dy70, [aria-label="Timeline: Trending now"], [aria-label="Who to follow"] {
+	/* the aria-label selectors are there in case the class selectors fail */
+	.r-k0dy70,
+	.r-1in3vh1,
+	[aria-label="Timeline: Trending now"],
+	[aria-label="Who to follow"] {
 		display: none !important;
 	}
 }

@@ -9,7 +9,7 @@ Makes the picrew image maker fill the entire width of the page.
 The image maker shown above was made by [NUDEKAY](https://picrew.me/image_maker/395214).
 
 ## Twitter: Hide trends and follow suggestions
-Hides the "What's Happening" (trending) and "Who to Follow" boxes on the right side of the Home timeline on Twitter to minimize distractions.  
+Hides the "What's Happening" (trending) and "Who to Follow" boxes on the right side of the Home timeline to minimize distractions.  
 [![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/katacarbix/userstyles/master/styles/twitter-trends.user.css)  
 ![twitter preview](screenshots/twitter-1.png)
 
