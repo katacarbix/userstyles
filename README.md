@@ -14,7 +14,9 @@ Hides the "What's Happening" (trending) and "Who to Follow" boxes on the right s
 ![twitter preview](screenshots/twitter-1.png)
 
 ## Netdata: Hide Cloud annoyances
-[Netdata](https://www.netdata.cloud/) is a self-hosted server monitoring utility with an optional cloud service. If you don't plan on using it, this theme will remove all references to their cloud service and tidy up the UI.  
+[Netdata](https://www.netdata.cloud/) is a self-hosted server monitoring utility with an optional cloud service. If you don't plan on using it, this theme will remove all references to their cloud service and tidy up the UI.
+
+By default it applies to URLs on the port `19999`, netdata's default port. You will need to change this if your URL is something different.  
 [![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/katacarbix/userstyles/master/styles/netdata-cloudless.user.css)  
 ![netdata preview](screenshots/netdata-1.png)
 

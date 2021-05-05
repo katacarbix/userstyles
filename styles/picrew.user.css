@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Picrew Image Maker Widescreen
 @namespace      github.com/katacarbix/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    Makes the picrew image maker fill the entire page.
 @author         katacarbix
 @license        CC0-1.0
@@ -12,7 +12,7 @@
 @var   range    item-size   "Item button size"          [160, 50, 300, 1, "px"]
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://picrew.me/image_maker/"){
+@-moz-document url-prefix("https://picrew.me/image_maker/") {
     .imagemaker_ad_wrapper {
 		display: none !important;
 	}

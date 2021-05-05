@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Netdata: Hide Cloud annoyances
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Hides references to Netdata Cloud services in your registry if you don't ever plan on using that.
 @author         katacarbix
 @license        CC0-1.0
 ==/UserStyle== */
 
-@-moz-document domain("YOUR NETDATA INSTANCE URL HERE") {
+@-moz-document regexp("^https?:\\/\\/[^\\/]*:19999.*$") {
 	/* Hide cloud-related buttons */
 	div[class^="styled__BottomPanel"],
 	div[class^="styled__IframeContainer"],
