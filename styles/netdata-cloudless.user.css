@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           Netdata: Hide Cloud annoyances
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Hides references to Netdata Cloud services in your registry if you don't ever plan on using that.
+@author         katacarbix
+@license        CC0-1.0
+==/UserStyle== */
+
+@-moz-document domain("YOUR NETDATA INSTANCE URL HERE") {
+	/* Hide cloud-related buttons */
+	div[class^="styled__BottomPanel"],
+	div[class^="styled__IframeContainer"],
+	div[class^="styled__ListContainer"],
+	div[class^="styled__SignInIframe"],
+	div[class^="styled__SignInButton"] {
+		display: none !important;
+	}
+
+	/* Shift contents to account for stuff we just removed */
+	body {
+		padding-left: 0 !important;
+	}
+	aside[class^="styled__PanelContainer"] {
+		left: 0 !important;
+	}
+
+	/* Minor spacing improvements */
+	.charts-body {
+		padding: 1% 2% !important;
+	}
+	#footer .col-md-10[role="main"] {
+		padding: 0 2% !important;
+	}
+}
